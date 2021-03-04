@@ -17,6 +17,7 @@ public:
         this->Data = data;
         this->next = nullptr;
     }
+    //imports stock data from a .csv file and stores it in a linked list
     static StockData *getStockDataFromFile(std::string path)
     {
         std::cout << "importing...";
