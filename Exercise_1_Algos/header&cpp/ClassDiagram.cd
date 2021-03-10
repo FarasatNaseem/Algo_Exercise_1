@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ASCIICodeGenerator">
+    <Position X="12.25" Y="9.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAgAAAAARA=</HashCode>
+      <FileName>ASCIICodeGenerator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HexadecimalValueGenerator">
+    <Position X="7.5" Y="9" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AACAIAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAgA=</HashCode>
+      <FileName>HexadecimalValueGenerator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AsciiToHexConverter">
+    <Position X="17" Y="8.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AsciiToHexConverter.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HashGenerator">
+    <Position X="12.25" Y="14" Width="2" />
+    <AssociationLine Name="asciiCodeList" Type="ASCIICodeGenerator" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.25" Y="14.875" />
+        <Point X="15.375" Y="14.875" />
+        <Point X="15.375" Y="10.062" />
+        <Point X="15" Y="10.062" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.084" Y="0.111" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="hexdecimalValueGenerator" Type="HexadecimalValueGenerator" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12.25" Y="14.562" />
+        <Point X="8.938" Y="14.562" />
+        <Point X="8.938" Y="11.132" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="asciiToHexConverter" Type="AsciiToHexConverter" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.25" Y="15.103" />
+        <Point X="13.25" Y="15.478" />
+        <Point X="18.75" Y="15.478" />
+        <Point X="18.75" Y="9.853" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.11" Y="0.06" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="asciiCodeGenerator" Type="ASCIICodeGenerator" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.5" Y="14" />
+        <Point X="13.5" Y="13.876" />
+        <Point X="13.5" Y="13.876" />
+        <Point X="13.5" Y="11.382" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.139" Y="0.133" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAACAAgQAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>HashGenerator.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="asciiCodeGenerator" />
+      <Field Name="asciiCodeList" />
+      <Field Name="hexdecimalValueGenerator" />
+      <Field Name="asciiToHexConverter" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="HashTable">
+    <Position X="1.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAIAEAAAECAAQAEBEAAAAgAAAIEACAAAAAAAAAAgADA=</HashCode>
+      <FileName>HashTable.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="aktien" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="HashCodeGenerator">
+    <Position X="11.75" Y="4.5" Width="3.25" />
+    <AssociationLine Name="hexdecimalValueGenerator" Type="HexadecimalValueGenerator" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.75" Y="4.917" />
+        <Point X="7.125" Y="4.917" />
+        <Point X="7.125" Y="10.25" />
+        <Point X="7.5" Y="10.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.11" Y="-0.362" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="asciiToHexConverter" Type="AsciiToHexConverter" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15" Y="4.926" />
+        <Point X="20.375" Y="4.926" />
+        <Point X="20.375" Y="9.25" />
+        <Point X="20" Y="9.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.11" Y="-0.362" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAACAAgAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>HashCodeGenerator.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="hexdecimalValueGenerator" />
+      <Field Name="asciiToHexConverter" />
+      <Field Name="asciiCodeGenerator" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Aktie" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAABAAAAAAAAAAAAQAAAAAAAAAAAAAAQIAAAA=</HashCode>
+      <FileName>Aktie.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
